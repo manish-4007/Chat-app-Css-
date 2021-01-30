@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* may comment the following */
+    background-color: hsl(270, 20%, 96%);
+    height: 100vh;
+    flex-direction: column;
+}
+#main::before{
+    content: "";
+    position: absolute;
+
+    top: 0%;
+    left: -7%;
+    background: linear-gradient( to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    border-radius:0 0 500px 500px;
+    height: 80%;
+    width: 28%;
+    z-index: -1;
+}
+
+#main::after{
+    content: "";
+    position: absolute;
+
+    bottom: 0%;
+    left: 75%;
+    background-color:  #f0ebf5;
+    border-radius:350px 0 0 0 ;
+    height: 80%;
+    width: 25%;
+    z-index: -1;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#phone{
+    width: 270px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 50px;
+    box-shadow: 5px 20px 25px rgb(221, 219, 219);
+}
+
+#display{
+    background-color: hsl(270, 20%, 96%);
+    margin: auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.navbar{
+    /* height: 20%; */
+    background: linear-gradient( to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    border-radius: 30px 30px 10px 10px;
+    box-shadow: 0 5px 5px gray;
+    
+}
+
+#camera-cut{
+    position: relative;
+    bottom: 2px;
+    width: 50%;
+    height: 18px;
+    margin: auto;
+    background-color: white;
+    border-radius: 0 0 20px 20px ;
+}
+.navigation{
+    display: flex;
+    padding: 8px;
+}
+
+#back-icon{
+    width: 13px;
+    height: 8px;
+    transform: rotate(45deg);
+    border: 3.5px solid white;
+    border-top: 0px;
+    border-right: 0px;
+    border-radius: 2.5px;
+    margin:  auto 5px ;
+    margin-right: 0;
+    
+}
+#info{
+    display: flex;
+    font-size: 0.5rem;
+    align-items: center;
+    color: white;
+
+}
+#name-status p{
+    color: hsl(276, 100%, 81%);
+    font-size: 0.6rem;
+    line-height: 2;
+}
+#avatar{
+    width: 13%;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin: 7px;
+
+}
+#option-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dot{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 1px 10px;
+}
+
+#chats{
+    padding: 8px;
+}
+.friend{
+    float: left;
+    max-width: 60%;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 12px 12px 12px 2px;
+    background-color:  #ece5f3;
+    font-size: 0.67rem;
+    color: hsl(276, 55%, 52%);
+    
+}
+.pics{
+    display: flex;
+    float: right;
+    width: 70%;
+    padding: 0 5px;
+      
+}
+.pics img{
+    width: 30%;
+    margin: 4px;
+    border-radius: 10px;
+
+}
+
+.me{
+    float: right;
+    max-width: 60%;
+    
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 12px 12px 2px 12px;
+    background-color: white;
+    font-size: 0.67rem;
+    box-shadow: 0 3px 3.5px hsl(206, 6%, 79%);
+    color: hsl(271, 15%, 43%);
+    
+}
+.price-for-walk{
+    display: inline-flex;
+    width: 70%;
+    padding: 8px;
+    margin: 4px 0;
+    border-radius: 12px 12px 12px 2px;
+    background: linear-gradient( to left, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    
+}
+.price-for-walk p{
+    
+    width: 50%;
+    color: white;
+    margin: auto 8px;
+    font-size: 0.67rem;
+}
+.circle{
+    width: 12px;
+    height: 12px;
+    border: 1px solid hsl(289, 100%, 72%);
+    border-radius: 50%;
+}
+.price{
+    
+    font-weight: bolder;
+    margin: auto 10px;
+    margin-right: 0px;
+}
+.chat-box{
+    height: 45px;
+    margin: 0 10px 10px;
+    
+}
+
+.chat-box input[type="text"]{
+    width: 90%;
+    padding: 15px;
+    border: 0px;
+    border-radius: 35px;
+    font-size: 0.67rem;
+    color: hsl(206, 6%, 79%);
+    outline-style: none;
+}
+#send-btn{
+    width: 39px;
+    height: 39px;
+    margin: 10px;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+    left: 205.2px;
+    bottom: 50.5px;
+    
+}
+#btn{
+
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border: 3.5px solid white;
+    position: relative;
+    right: 2px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-radius: 2.5px;
+    
+}
+
+#about{
+    width: 35vw;
+    margin: 50px;
+    padding: 50px;
+    }
+    
+    #about h1{
+        color: hsl(271, 36%, 24%);
+       font-size: 2.89rem; 
+       line-height: 2;
+       
+    }
+    
+    #about p{
+        color: hsl(270, 7%, 64%);
+        font-size: 1.2rem; 
+        line-height: 1.75;
+
+
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: sticky;
+    bottom: 10px;
+    padding: 10px;
+
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+
+}
